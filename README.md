@@ -1,7 +1,4 @@
 # The Influence of Personalization and Conversation Warmth on User Risk Perception and Trust in AI-Driven Chatbots: A Cross-Domain Experimental Study
-
-Muayyad Ramadan | Amsterdam University of Applied Sciences | Master of Digital Driven Business | 2025–2026
-
 ---
 
 ## Study Overview

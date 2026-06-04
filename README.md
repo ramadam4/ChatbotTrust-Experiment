@@ -42,8 +42,8 @@ Target N = 600 (approx. 75 per condition), recruited via Prolific Academic.
 
 ## Key Outcome Measures
 
-- **Risk Perception** (mediator): 12-item scale across four dimensions — financial, performance, psychological, and privacy risk (Featherman & Pavlou, 2003; Alrawad et al., 2023; Xiao et al., 2025). Higher scores = higher perceived risk.
-- **Trust** (dependent variable): 6-item scale covering cognitive and emotional trust (Komiak & Benbasat, 2006). Higher scores = higher trust.
+- **Risk Perception** (mediator): 12-item scale across four dimensions — financial, performance, psychological, and privacy risk. Higher scores = higher perceived risk.
+- **Trust** (dependent variable): 6-item scale covering cognitive and emotional trust. Higher scores = higher trust.
 
 ---
 
@@ -78,53 +78,3 @@ The Gradio chatbot app (`app.py`) is embedded as an iframe in Qualtrics. Conditi
 **Example URL (Financial, Warm, High Personalization):**
 ```
 https://your-app-url.com/?pid=${e://Field/ResponseID}&domain=financial&warmth=1&investment_goal=${q://QID5/ChoiceTextEntryValue}&risk_tolerance=${q://QID6/ChoiceDescription}&time_horizon=${q://QID7/ChoiceDescription}
-```
-
----
-
-## Repository Contents
-
-| File | Description |
-|------|-------------|
-| `app.py` | Gradio chatbot application with Qualtrics bridge |
-| `chat_helpers.py` | System prompt injection (warmth + personalization) and history builder |
-| `logger.py` | Async per-participant JSONL conversation logger |
-| `SYS_PROMPT_FINANCIAL.txt` | System prompt for the financial advisory chatbot |
-| `SYS_PROMPT_RETAIL.txt` | System prompt for the retail recommendation chatbot |
-| `process_analysis.R` | Main analysis script (PROCESS Model 1, 4, 7 equivalents using base R + boot) |
-| `power_analysis.R` | Monte Carlo power simulation for moderated mediation |
-
----
-
-## Reproducing the Analysis
-
-1. Export Qualtrics data as `Results.csv` and place it in the repository root.
-2. Ensure R is installed with the `boot` package (included in base R).
-3. Run the scripts:
-
-```r
-source("power_analysis.R")   # power analysis (run before data collection)
-source("process_analysis.R") # hypothesis tests (run after data collection)
-```
-
-Expected column names in `Results.csv`: `PERS`, `WARMTH`, `DOMAIN`, `RP1`–`RP12`, `T1`–`T6`, `P1`–`P3`, `W1`–`W3`, `CV1`–`CV3`, `CHAT_EXP`.
-
----
-
-## Running the Chatbot App
-
-Requires an `OPENAI_API_KEY` environment variable.
-
-```bash
-pip install gradio openai tiktoken
-export OPENAI_API_KEY=your_key_here
-python app.py
-```
-
-The app launches with a public share link (`share=True`) suitable for embedding in Qualtrics as an iframe.
-
----
-
-## Ethical Considerations
-
-Participants are fully debriefed after completing the survey. All data are stored by Prolific participant ID only, with no personally identifiable information collected. The study was approved in accordance with institutional research ethics guidelines.

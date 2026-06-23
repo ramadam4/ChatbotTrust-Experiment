@@ -1,0 +1,12 @@
+Hypothesis,Description,Estimate,p_or_CI,Verdict
+H1a,Personalization lowers overall risk,B = -0.038,p = 0.7574,Not supported
+H2a,Warmth lowers overall risk,B = -0.095,p = 0.4432,Not supported
+H3,Personalization x warmth lowers overall risk,B = 0.367,p = 0.0367,Supported (Two tailed)
+H1b,Personalization raises trust,B = 0.211,p = 0.2033,Not supported
+H2b,Warmth raises trust,B = 0.068,p = 0.6786,Not supported
+H4a,Overall risk mediates personalization -> trust,indirect = 0.028,"[-0.159, 0.212]",Not supported
+H4b,Overall risk mediates warmth -> trust,indirect = 0.069,"[-0.105, 0.245]",Not supported
+H5a,Domain moderates personalization -> risk,B = 0.062,p = 0.72,Not supported
+H5b,Domain moderates warmth -> risk,B = 0.302,p = 0.0806,Not supported
+H6a,Indirect effect of personalization differs by domain,index = -0.047,"[-0.302, 0.192]",Not supported
+H6b,Indirect effect of warmth differs by domain,index = -0.217,"[-0.460, 0.024]",Not supported

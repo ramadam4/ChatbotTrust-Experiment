@@ -1,0 +1,16 @@
+X,Mediator,a,b,Indirect,CI_95,Significant
+personalization,Financial_Risk,-0.154,-0.396,0.061,"[-0.072, 0.195]",No
+personalization,Performance_Risk,-0.178,-0.719,0.128,"[-0.094, 0.349]",No
+personalization,Psychological_Risk,0.165,-0.315,-0.052,"[-0.163, 0.055]",No
+personalization,Privacy_Risk,0.014,-0.253,-0.003,"[-0.101, 0.092]",No
+personalization,Risk,-0.038,-0.726,0.028,"[-0.159, 0.212]",No
+warmth,Financial_Risk,-0.254,-0.396,0.101,"[-0.026, 0.233]",No
+warmth,Performance_Risk,-0.168,-0.719,0.121,"[-0.093, 0.318]",No
+warmth,Psychological_Risk,-0.004,-0.315,0.001,"[-0.105, 0.110]",No
+warmth,Privacy_Risk,0.047,-0.253,-0.012,"[-0.104, 0.076]",No
+warmth,Risk,-0.095,-0.726,0.069,"[-0.105, 0.245]",No
+Warmth_x_Personalization,Financial_Risk,0.633,-0.396,-0.251,"[-0.446, -0.063]",Yes
+Warmth_x_Personalization,Performance_Risk,0.614,-0.719,-0.441,"[-0.742, -0.137]",Yes
+Warmth_x_Personalization,Psychological_Risk,0.04,-0.315,-0.013,"[-0.163, 0.134]",No
+Warmth_x_Personalization,Privacy_Risk,0.181,-0.253,-0.046,"[-0.178, 0.080]",No
+Warmth_x_Personalization,Risk,0.367,-0.726,-0.266,"[-0.520, -0.017]",Yes

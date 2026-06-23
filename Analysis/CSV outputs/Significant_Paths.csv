@@ -1,0 +1,13 @@
+Effect,Type,Estimate,p_or_CI,Meaning
+Personalization x Warmth -> Financial_Risk,a-path (cue -> risk),0.633,p = 0.0084,raises risk
+Personalization x Warmth -> Performance_Risk,a-path (cue -> risk),0.614,p = 0.0042,raises risk
+Personalization x Warmth -> Risk,a-path (cue -> risk),0.367,p = 0.0367,raises risk
+Financial_Risk -> Trust,b-path (risk -> trust),-0.402,p = 0.0000,lowers trust
+Performance_Risk -> Trust,b-path (risk -> trust),-0.721,p = 0.0000,lowers trust
+Psychological_Risk -> Trust,b-path (risk -> trust),-0.316,p = 0.0000,lowers trust
+Privacy_Risk -> Trust,b-path (risk -> trust),-0.256,p = 0.0000,lowers trust
+Risk -> Trust,b-path (risk -> trust),-0.732,p = 0.0000,lowers trust
+Warmth_x_Personalization -> Financial_Risk -> Trust,indirect (mediation),-0.251,"[-0.446, -0.063]",lowers trust via risk
+Warmth_x_Personalization -> Performance_Risk -> Trust,indirect (mediation),-0.441,"[-0.742, -0.137]",lowers trust via risk
+Warmth_x_Personalization -> Risk -> Trust,indirect (mediation),-0.266,"[-0.520, -0.017]",lowers trust via risk
+warmth x domain -> Psychological_Risk -> Trust,index of moderated mediation,-0.177,"[-0.342, -0.034]",indirect effect differs by domain

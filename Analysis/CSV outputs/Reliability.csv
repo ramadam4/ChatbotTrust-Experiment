@@ -1,0 +1,12 @@
+Scale,Items,Cronbach_alpha,KMO,Meets_.70
+Warmth check,3,0.906,0.755,Yes
+Personalization check,2,0.843,0.5,Yes
+Financial risk,3,0.884,0.728,Yes
+Performance risk,3,0.873,0.732,Yes
+Psychological risk,3,0.814,0.711,Yes
+Privacy risk,3,0.908,0.754,Yes
+Risk (overall),12,0.885,0.851,Yes
+Cognitive trust,3,0.923,0.76,Yes
+Emotional trust,3,0.954,0.777,Yes
+Trust (overall),6,0.953,0.904,Yes
+Risk aversion,3,0.489,0.582,No

@@ -1,0 +1,9 @@
+Domain,Personalization,Warmth,n,Risk_M,Risk_SD,Trust_M,Trust_SD
+Financial,Low,Cold,67,4.39,1.07,3.9,1.22
+Financial,Low,Warm,66,4.45,0.9,3.96,1.27
+Financial,High,Cold,67,4.38,0.98,4.05,1.19
+Financial,High,Warm,67,4.78,0.92,3.68,1.25
+Retail,Low,Cold,65,4.17,1.0,3.82,1.54
+Retail,Low,Warm,72,3.94,1.01,3.9,1.37
+Retail,High,Cold,68,4.1,1.08,4.11,1.42
+Retail,High,Warm,66,4.23,1.01,3.52,1.53
